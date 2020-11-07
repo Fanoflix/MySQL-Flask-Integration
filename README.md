@@ -1,9 +1,9 @@
 # MySQL-Flask Integration
  Integrating MySQL with Flask
 
-### Setting up Databse (Commit # 3: Setting up Database)
---- Setting up ---
-#### Check code in the commit for better understanding.
+## Setting up Database (Commit # 3: Setting up Database)
+### Setting up ---
+#### Note: Check code in the commit for better understanding.
 
 - Download MySQL and set up a connection
 
@@ -11,13 +11,12 @@
 
 - Set up a Cursor
 
- -- (
-
      WHAT IS CURSOR?
 
-    -The MySQLCursor class instantiates objects that can execute operations such as SQL statements. Cursor objects interact with the MySQL server using a MySQLConnection object. 
-    
-    ) --
+    -The MySQLCursor class instantiates objects that 
+    can execute operations such as SQL statements. 
+    Cursor objects interact with the MySQL server 
+    using a MySQLConnection object. 
 
 - Create Databse using <cursor_name>.execute("CREATE DATABASE <db_name>")
 
