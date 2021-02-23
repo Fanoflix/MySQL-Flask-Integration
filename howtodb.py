@@ -34,18 +34,20 @@ idd = dbCursor.lastrowid
 fnamed = "Faizan"
 lnamed= "Shahid"
 departmentd = "CS"
-dbCursor.execute("""INSERT INTO employees (fname, lname, department)
-                    VALUES (%(fname)s, %(lname)s, %(department)s) """,
-                    {
-                      "fname" : fnamed,
-                      "lname" : lnamed,
-                      "department" : departmentd
-                    })
+dbCursor.execute("""
+INSERT INTO employees (fname, lname, department)
+VALUES (%(fname)s, %(lname)s, %(department)s) 
+""",
+{
+  "fname" : fnamed,
+  "lname" : lnamed,
+  "department" : departmentd
+})
 
 ### --- DELETE RECORD ---
 dbCursor.execute("DELETE FROM employees WHERE id = 6 ")
 # ### -- COMMIT --- ### Always commit after changes
-mydb.commit()
+# mydb.commit()
 
 
 ### -- SELECT ---
